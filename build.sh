@@ -4,7 +4,7 @@
 set -e
 cd "$(dirname "$0")"
 
-swiftc -O -o FreeBSDVZ main.swift
+swiftc -O -target arm64-apple-macos14.0 -o FreeBSDVZ main.swift
 
 # The com.apple.security.virtualization entitlement is required for the VM to
 # start.  It is not a restricted entitlement, so ad-hoc signing (-s -) works.
