@@ -1,0 +1,10 @@
+# Build output
+FreeBSDVZ
+
+# VM images and per-image state
+*.img
+*.raw
+*.efivars
+*.machineid
+
+.DS_Store
